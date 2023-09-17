@@ -1,0 +1,42 @@
+{
+  "name": "hello-note",
+  "version": "1.0.0",
+  "description": "The “HelloNote” app allows users to write, compile and execute codes in many most popular programming languages. For note-taking, users will certainly be able to write notes alongside the codes.",
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && nodemon start",
+    "window": "cd frontend && npm run electron-dev",
+    "start": " concurrently \"npm run frontend\" \"npm run backend\"",
+    "postinstall": "cd backend && npm install && cd .. && cd frontend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "proxy": "http://localhost:3000/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uoa-compsci399-s2-2022/hello-note.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uoa-compsci399-s2-2022/hello-note/issues"
+  },
+  "homepage": "https://github.com/uoa-compsci399-s2-2022/hello-note#readme",
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "electron": "^21.1.0",
+    "electron-builder": "^23.6.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "brace": "^0.11.1",
+    "demo": "^0.1.10",
+    "file-saver": "^2.0.5",
+    "i": "^0.3.7",
+    "npm": "^8.19.2",
+    "quill-to-pdf": "^1.0.7",
+    "react-demo": "^2.0.0",
+    "react-swipeable-views": "^0.14.0"
+  }
+}

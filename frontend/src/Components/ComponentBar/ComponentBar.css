@@ -1,0 +1,35 @@
+.bar{
+    width: 100%;
+    background-color: #ebebeb;
+    font-size: 2vmin;
+}
+
+#items-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1vmin 2vmax;
+    
+}
+
+#button-container {
+    display: flex;
+}
+
+.componentBarSpan {
+    font-size: 2vmin;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    #items-container {
+        justify-content: center;
+    }
+
+    .bar, .componentBarSpan{
+        font-size: 2vmax;
+    }
+
+
+}

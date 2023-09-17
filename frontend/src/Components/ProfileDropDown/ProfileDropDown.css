@@ -1,0 +1,57 @@
+#profileOptions{
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    top: 11vmin;
+    right: 1.5vmax;
+    background-color: #f5f5f5;
+    width: 15%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #6c8ceb;
+    font-family: 'Inter', sans-serif;
+    border-radius: 2vmin;
+    text-align: center;
+}
+
+#dropDownBreak{
+    height: 1px;
+    background-color: #cfcfcf;
+    width: 90%;
+    margin: 1vmin 0 2vmin 0;
+}
+
+
+.dropDownOption{
+    margin: 0 0 2vmin 0;
+    font-size: 2vmin;
+    cursor: pointer;
+}
+
+.dropDownOptionUser {
+    margin: 1vmin 0 0 0;
+    font-size: 3vmin;
+}
+
+@media only screen and (max-width: 600px){
+    #profileOptions{
+        width: 50%;
+        box-shadow: 1vmin 1vmin 2vmin 0 rgb(71, 71, 71);
+        top: 10vmax;
+    }
+
+    .dropDownOptionUser{
+        margin: 1vmax 0 0 0;
+        font-size: 3vmax;
+    }
+
+    #dropDownBreak{
+        margin: 1vmax 0 2vmax 0;
+    }
+
+    .dropDownOption{
+        font-size: 2.5vmax;
+        margin: 0 0 2vmax 0;
+    }
+}
