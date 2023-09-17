@@ -1,0 +1,33 @@
+.creationButton {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2vmin 1vmax 1vmin 1vmax;
+    cursor: pointer;
+}
+
+.creationButtonIcon {
+    width: 6vmax;
+    height: 6vmax;
+    color: #6c8ceb;
+}
+
+.creationText{
+    margin: 1vmin 0 0.5vmin;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .creationButton {
+        width: 40%;
+        height: 13vmax;
+    }
+
+    .creationButtonIcon {
+        width: 8vmax;
+        height: 8vmax;
+    }
+}
